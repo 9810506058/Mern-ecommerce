@@ -1,14 +1,15 @@
-import React from 'react'
-import Layout from '../components/Layouts/Layout'
+import React from 'react';
+import Layout from '../components/Layouts/Layout';
+import { useAuth } from '../context/auth';
 
 const Home = () => {
+  const [auth, setAuth] = useAuth(); 
   return (
-   <Layout>
-    <h1>
-        homepage
-    </h1>
-   </Layout>
-  )
-}
+    <Layout>
+      <h1>Homepage</h1>
+      <pre>{JSON.stringify(auth, null, 4)}</pre>
+    </Layout>
+  );
+};
 
-export default Home
+export default Home;
