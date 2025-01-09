@@ -1,0 +1,211 @@
+/* Cart Page Styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+  
+  /* Card */
+  .card {
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+  }
+  
+  .card .card-body {
+    padding: 20px;
+  }
+  
+  .card img {
+    border-radius: 10px;
+  }
+  
+  .card h5,
+  .card h6 {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+  }
+  
+  .card p {
+    color: #555;
+  }
+  
+  .card .btn {
+    border-radius: 10px;
+    padding: 10px 20px;
+  }
+  
+  /* Cart Header */
+  .text-center h1 {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .text-muted {
+    font-size: 1.1rem;
+    color: #777;
+  }
+  
+  /* Cart Items */
+  .card.mb-3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+  }
+  
+  .card.mb-3:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card .flex-grow-1 {
+    flex-grow: 1;
+  }
+  
+  .card .d-flex {
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .card .form-control {
+    border-radius: 10px;
+    padding: 5px 10px;
+    width: 80px;
+    text-align: center;
+  }
+  
+  .card .fa-trash-alt {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .card .fa-trash-alt:hover {
+    color: #e74c3c;
+  }
+  
+  /* Cart Summary */
+  .card.p-4 {
+    border-radius: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+  }
+  
+  .card h4,
+  .card h5 {
+    color: #333;
+  }
+  
+  .card .btn-block {
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  .card .btn-danger {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+  }
+  
+  .card .btn-outline-primary {
+    border-color: #3498db;
+    color: #3498db;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  
+  .card .btn-danger:hover {
+    background-color: #c0392b;
+  }
+  
+  .card .btn-outline-primary:hover {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  /* Empty Cart View */
+  .text-center img {
+    margin-bottom: 20px;
+  }
+  
+  .text-center h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .text-center button {
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: #3498db;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  .text-center button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .card.mb-3 {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .card.mb-3 img {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .card .d-flex {
+      justify-content: flex-start;
+      align-items: center;
+    }
+  
+    .card .flex-grow-1 {
+      margin-left: 10px;
+    }
+  
+    .card .form-control {
+      width: 60px;
+    }
+  
+    .text-center h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .container {
+      padding: 15px;
+    }
+  
+    .card .btn {
+      padding: 8px 16px;
+    }
+  
+    .card h5 {
+      font-size: 1.2rem;
+    }
+  
+    .card h6 {
+      font-size: 1rem;
+    }
+  
+    .card .form-control {
+      width: 50px;
+    }
+  }
+  

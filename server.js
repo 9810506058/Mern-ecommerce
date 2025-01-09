@@ -5,6 +5,7 @@ import morgan from 'morgan';
 import connect_db from './config/db.js';
 import authRoutes from'./routes/authRoute.js';
 import categoryRoutes from './routes/categoryRoutes.js';
+import ProductRoutes from './routes/ProductRoutes.js'
 import cors from 'cors';
 
 
@@ -21,6 +22,7 @@ app.use(cors());
 
 app.use("/api/v1/auth",authRoutes);
 app.use("/api/v1/category",categoryRoutes);
+app.use("/api/v1/product",ProductRoutes);
 
 app.get('/', (req, res) => {
     res.send('<h1>Welcome to the world</h1>');

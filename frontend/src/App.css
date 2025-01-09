@@ -14,7 +14,7 @@
   font-family: "Poppins", sans-serif;
   font-size: 17px;
   line-height: 26px;
-  text-transform: uppercase;
+ 
   box-shadow: 0 8px 6px -6px gray;
   --webkit-box-shadow: 0 8px 6px -6px gray;
   border-bottom: solid gray !important;
@@ -69,6 +69,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: black;
+  color:white;
 }
 
 .pnf-title {
@@ -82,13 +84,16 @@
 
 .pnf-btn {
   color: black;
+  background-color: white;
+
+
   border: 1px solid black;
   text-decoration: none;
   padding: 10px;
   margin-top: 10px;
 }
 .pnf-btn:hover {
-  background-color: black;
+  background-color: red;
   color: white;
 }
 /* ========================================= */
@@ -108,4 +113,12 @@
   height: 70vh;
   width: 100%;
   border: 1px solid black;
+}
+.form-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  width: 100%;
+
 }

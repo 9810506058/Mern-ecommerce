@@ -1,0 +1,51 @@
+/* Style for the product card buttons */
+.product-btn {
+    width: 90%;
+    margin-top: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover effect for the buttons */
+  .product-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Custom card styling */
+  .product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Ensure buttons are aligned properly */
+  .product-btn {
+    width: 10%;
+    padding: 5px;
+    margin-inline-start: 3rem;
+  }
+  
+  /* Button color styles */
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: green;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: purple;
+  }
+  
