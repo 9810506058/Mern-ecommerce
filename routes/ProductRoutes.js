@@ -52,7 +52,8 @@ router.get("/product-photo/:pid", productPhotoController);
 router.delete("/delete-product/:pid", deleteProductController);
 
 //search product
-router.get("/search/:search", searchProductController);
+//search product
+router.get("/search/:keyword", searchProductController);
 
 //filter product
 router.post("/product-filters", productFiltersController);

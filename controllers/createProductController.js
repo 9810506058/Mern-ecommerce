@@ -178,10 +178,11 @@ try {
  
 
 //search product
+// search product
 export const searchProductController = async (req, res) => {
   try {
     const { keyword } = req.params;
-    const results = await productModel
+    const resutls = await productModel
       .find({
         $or: [
           { name: { $regex: keyword, $options: "i" } },
@@ -189,7 +190,7 @@ export const searchProductController = async (req, res) => {
         ],
       })
       .select("-photo");
-    res.json(results);
+    res.json(resutls);
   } catch (error) {
     console.log(error);
     res.status(400).send({
