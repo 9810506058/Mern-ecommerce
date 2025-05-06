@@ -1,8 +1,8 @@
 import express from "express";
-import { isAdmin, requireSignIn } from "../middlewares/authmiddleware.js";
 import { createUserController,updateUserController,UserControlller
     ,singleUserControlller,deleteUserController
  } from "../controllers/createUserController.js";
+import { isAdmin, requireSignIn } from "../middlewares/authMiddleware.js";
 
 const router =express.Router()
 
