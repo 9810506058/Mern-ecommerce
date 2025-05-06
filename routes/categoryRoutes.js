@@ -2,7 +2,7 @@ import express from "express";
 import { createCategoryController,updateCategoryController,categoryControlller
     ,singlecategoryControlller,deleteCategoryController
  } from "../controllers/createCategoryController.js";
-import { isAdmin, requireSignIn } from "../middlewares/authMiddleware.js";
+import { isAdmin, requireSignIn } from "../src/middlewares/authmiddleware.js";
 
 const router =express.Router()
 

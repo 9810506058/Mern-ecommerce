@@ -1,7 +1,7 @@
 // router file, e.g., authRoutes.js
 import express from 'express';
 import { registerController,loginController,testController, updateProfileController  } from '../controllers/authcontroller.js';  // Ensure correct import
-import { isAdmin, requireSignIn } from '../middlewares/authMiddleware.js';
+import { isAdmin, requireSignIn } from '../src/middlewares/authmiddleware.js';
 
 const router = express.Router();
 
