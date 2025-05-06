@@ -2,10 +2,10 @@ import cors from "cors";
 import dotenv from "dotenv";
 import express from "express";
 import morgan from "morgan";
-import connect_db from "./config/db.js";
-import authRoutes from "./routes/authRoute.js";
-import categoryRoutes from "./routes/categoryRoutes.js";
-import ProductRoutes from "./routes/ProductRoutes.js";
+import authRoutes from "./src/routes/authRoute.js";
+import categoryRoutes from "./src/routes/categoryRoutes.js";
+import ProductRoutes from "./src/routes/ProductRoutes.js";
+import connect_db from "./src/config/db.js";
 
 dotenv.config();
 const app = express();
